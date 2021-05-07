@@ -6,8 +6,10 @@
 
     <!-- entry point, look for <article> -->
     <xsl:template match="/">
-        <speak xml:lang="de-DE">
-            <xsl:apply-templates select="//article"/>
+        <speak version="1.0" xml:lang="de-DE">
+            <voice name="de-DE-KatjaNeural">
+                <xsl:apply-templates select="//article"/>
+            </voice>
         </speak>
     </xsl:template>
 
