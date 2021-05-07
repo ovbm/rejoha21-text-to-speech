@@ -2,8 +2,6 @@
 
 set -eu
 
-echo "${#}"
-
 if [ "$#" -ne "1" ]; then
     echo "Usage: ${0} URL"
 else
